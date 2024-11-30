@@ -15,7 +15,3 @@ protocol APIRequest {
     
     init (url: URL?, method: HTTPMethod, headers: [String: String]?, body: Data?) throws
 }
-
-enum APIRequestError: Error {
-    case invalidURL
-}
