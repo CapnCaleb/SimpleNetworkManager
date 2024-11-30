@@ -1,3 +1,13 @@
+//
+//  MockAPIRequest.swift
+//  SimpleNetworkManager
+//
+//  Created by Caleb on 11/29/24.
+//
+
+import Foundation
+@testable import SimpleNetworkManager
+
 struct MockAPIRequest: APIRequest {
     let url: URL
     let method: HTTPMethod
