@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "1F325D7B-B32E-43CF-9A2A-B1041E2CB452",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "SimpleNetworkManagerTests",
+        "name" : "SimpleNetworkManagerTests"
+      }
+    }
+  ],
+  "version" : 1
+}

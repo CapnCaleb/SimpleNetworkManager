@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "861DE2A1-27E6-4B65-BE5D-A239366305E3",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "SimpleNetworkManagerTests",
+        "name" : "SimpleNetworkManagerTests"
+      }
+    }
+  ],
+  "version" : 1
+}
