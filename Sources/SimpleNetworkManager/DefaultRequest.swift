@@ -1,5 +1,5 @@
 //
-//  DefaultAPIRequest.swift
+//  DefaultRequest.swift
 //  SimpleNetworkManager
 //
 //  Created by Caleb on 11/29/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Request: APIRequest {
+struct DefaultRequest: APIRequest {
     let url: URL
     let method: HTTPMethod
     let headers: [String: String]?
