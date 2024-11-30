@@ -14,7 +14,7 @@ struct DefaultRequest: APIRequest {
     let body: Data?
 
     init(url: URL?, method: HTTPMethod, headers: [String: String]? = nil, body: Data? = nil) throws {
-        guard let url else { throw APIRequestError.invalidURL }
+        guard let url else { throw SimpleNetworkError.invalidURL }
         self.url = url
         self.method = method
         self.headers = headers
