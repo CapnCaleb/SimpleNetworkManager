@@ -11,11 +11,11 @@ import Foundation
 public struct NetworkManager {
     private let session: URLSessionProtocol
     
-    init(session: URLSessionProtocol = URLSession.shared) {
+    public init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
     
-    func performRequest(_ request: APIRequest) async throws -> Data {
+    public func performRequest(_ request: APIRequest) async throws -> Data {
         var urlRequest = URLRequest(url: request.url)
         urlRequest.httpMethod = request.method.rawValue
         urlRequest.allHTTPHeaderFields = request.headers
@@ -25,7 +25,7 @@ public struct NetworkManager {
         return data
     }
     
-    func performRequest<T: Decodable>(_ request: APIRequest, responseType: T.Type) async throws -> T {
+    public func performRequest<T: Decodable>(_ request: APIRequest, responseType: T.Type) async throws -> T {
         let data = try await performRequest(request)
         return try JSONDecoder().decode(T.self, from: data)
     }
