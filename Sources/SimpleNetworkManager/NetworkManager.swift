@@ -8,6 +8,7 @@
 
 import Foundation
 
+@preconcurrency
 public struct NetworkManager {
     private let session: URLSessionProtocol
     
