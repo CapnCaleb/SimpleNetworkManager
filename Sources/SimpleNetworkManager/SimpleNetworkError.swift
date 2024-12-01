@@ -6,5 +6,5 @@
 //
 
 enum SimpleNetworkError: Error {
-    case invalidURL(String?)
+    case invalidURL
 }
