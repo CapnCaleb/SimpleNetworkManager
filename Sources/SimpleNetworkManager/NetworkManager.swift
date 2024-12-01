@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct NetworkManager {
+struct NetworkManager {
     private let session: URLSessionProtocol
     
     init(session: URLSessionProtocol = URLSession.shared) {

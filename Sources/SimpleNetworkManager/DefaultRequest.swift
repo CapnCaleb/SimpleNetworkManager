@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct DefaultRequest: APIRequest {
+struct DefaultRequest: APIRequest {
     let url: URL
     let method: HTTPMethod
     let headers: [String: String]?
