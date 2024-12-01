@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol APIRequest {
+public protocol APIRequest {
     var url: URL { get }
     var method: HTTPMethod { get }
     var headers: [String: String]? { get }
