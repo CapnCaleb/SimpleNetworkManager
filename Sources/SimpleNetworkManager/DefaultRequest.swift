@@ -8,12 +8,12 @@
 import Foundation
 
 public struct DefaultRequest: APIRequest {
-    let url: URL
-    let method: HTTPMethod
-    let headers: [String: String]?
-    let body: Data?
+    public let url: URL
+    public let method: HTTPMethod
+    public let headers: [String: String]?
+    public let body: Data?
 
-    init(url: URL?, method: HTTPMethod, headers: [String: String]? = nil, body: Data? = nil) throws {
+    public init(url: URL?, method: HTTPMethod, headers: [String: String]? = nil, body: Data? = nil) throws {
         guard let url else { throw SimpleNetworkError.invalidURL }
         self.url = url
         self.method = method
